@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+                <nav class="nav">
+    <div class="navdiv">
+
+        <div class="logo"><a href="index.html"><img class="img" src="CORE (4).png" alt=""></a></div>
+
+        <div class="hamburger" id="hamburger"><img src="account_circle_31dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+    </div>
+</nav>
+
+    <div class="sidebar-toggle" id="sidebarToggle">☰</div>
+
+    <nav class="nav-list" id="sidebar">
+    <li><a href="index.html" class="">Home</a></li>
+    <li><a href="store.html" class="active">Store</a></li>
+    <li><a href="coins.html">Coins</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="ip.html">Ip & Port</a></li>
+</nav>
+
+    <div class="leader">
+
+    <div class="independent">
+        <a href="ending.html">
+                    <div class="in-div">
+            <img class="night" src="Untitled design (7).png" alt="">
+            <p class="rank">Knight Rank</p>
+            <p class="og">250</p>
+            <p class="dis">175</p>
+                    <p>In Game Cash - 350,000</p>
+                    <p>3 Homes</p>
+                    <p>/anvil</p>
+                    <p>/craft</p>
+            </div>
+        </a>
+        </div>
+
+    <div class="indepe">
+        <a href="ending.html">
+                    <div class="in-div1">
+            <img class="core-pic" src="CORE (5).png" alt="">
+            <p class="rank">Core+ Rank</p>
+            <p class="og">350</p>
+            <p class="dis">275</p>
+            <p>In Game Cash - 750,000</p>
+            <p>5 Homes</p>
+            <p>/anvil</p>
+            <p>/craft</p>
+            <p>/smithing</p>
+            <p>/repair</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="indep">
+        <a href="ending.html">
+                    <div class="in-div2">
+            <img class="phantom" src="CORE (6).png" alt="">
+            <p class="dis">Most Popular</p>
+            <p class="rank">Phantom Rank</p>
+            <p class="og">400</p>
+            <p class="dis">350</p>
+            <p>In Game Cash - 1,000,000</p>
+            <p>10 Homes</p>
+            <p>/anvil</p>
+            <p>/craft</p>
+            <p>/echest</p>
+            <p>/smithing</p>
+            <p>/sleep</p>
+            <p>/incheck</p>
+            <p>/repair</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="break"></div>
+    <div class="inde">
+        <a href="ending.html">
+                    <div class="in-div3">
+                    <img class="dragon" src="Untitled design (4).png" alt="">
+            <p class="rank">Dragon Rank</p>
+            <p class="og">550</p>
+            <p class="dis">500</p>
+            <p>In Game Cash - 1,500,000</p>
+            <p>15 Homes</p>
+            <p>/anvil</p>
+            <p>/craft</p>
+            <p>/echest</p>
+            <p>/smithing</p>
+            <p>/sleep</p>
+            <p>/invcheck</p>
+            <p>/pv 1-5</p>
+            <p>/repair</p>
+        </div>
+        </a>
+    </div> 
+
+</div>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        sidebar.classList.toggle("close");
+    });
+
+  const toggle = document.getElementById("sidebarToggle");
+  const sidebar = document.getElementById("sidebar");
+
+  toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+    navLinks.classList.toggle("close");
+  });
+
+</script>
+
+</body>
+</html>
