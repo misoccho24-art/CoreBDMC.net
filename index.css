@@ -246,12 +246,14 @@
 
         .footer {
                 padding: 10px;
-                background-color: #505050;
+                background-color: transparent;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 0 auto;
                 margin-top: 612px;
+                border-top: #505050;
+                border: 1px;
         }
 
         .div-f {
@@ -397,10 +399,13 @@
             height: 55px;
             transition: 0.2s ease;
             cursor: pointer;
+            transition: 0.4s;
         }
 
         .fliers-but:hover {
-            background-color: rgb(108, 112, 126);
+            box-shadow: 0 0 5px #ACB0C2,
+                        0 0 5px #ACB0C2,
+                        0 0 5px #ACB0C2;
         }
 
         .button-div {
@@ -547,7 +552,7 @@
 
 /* Ensure all 4 wrappers have the exact same starting width */
 .independent, .indepe, .indep, .inde {
-    width: 400px; 
+    width: 375px; 
 }
 
 /* THE MAGIC TRICK: The invisible line breaker */
@@ -597,11 +602,15 @@
     }
 
     .in-div, .in-div1 {
-        padding-bottom: 222px;
+        padding-bottom: 132px;
     }
 
     .in-div {
-        padding-bottom: 321px;
+        padding-bottom: 182px;
+    }
+
+        .in-div3 {
+        padding-bottom: 52px;
     }
 
     
@@ -614,7 +623,7 @@
     background-color: #505050;
     margin-top: 110px;
     border-radius: 8px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
     transition: 0.4s;
     /* Your background-colors, padding, borders, animations go here */
 }
@@ -652,7 +661,15 @@
             letter-spacing: 1px;
             font-family: "Kaushan Script";
             color: white;
+        }
 
+        .drank {
+            font-size: 26px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: "Kaushan Script";
+            color: rgb(0, 0, 0);
         }
 
         .og {
@@ -913,6 +930,26 @@
                 0 0 15px #00FFFF;
 }
 
+.discord1 {
+    padding: 10px;
+    width: 320px;
+    background-color: cyan;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    transition: 0.4s;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.discord1:hover {
+        box-shadow: 0 0 5px #00FFFF, 
+                0 0 10px #00FFFF, 
+                0 0 15px #00FFFF;
+}
+
+.body
+
  .cancel {
     padding: 10px;
     width: 120px;
@@ -927,4 +964,44 @@
     opacity: 0.7;
  }
 
+ .video {
     
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100; /* Pushes the video behind your text */
+            object-fit: cover; /* Prevents video distortion */
+            filter: blur(0px);
+            will-change: transform;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            display: flex;
+ }
+
+ .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 1456px;
+            height: 100%;
+            overflow: hidden;
+            
+            /* Changes the dimness. 0.5 = 50% dark. Raise to 0.7 for darker. */
+            background-color: rgba(0, 0, 0, 0.5); 
+            
+            z-index: -99; /* Sits directly on top of video, but under text */
+ }
+
+
+    .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 20%;
+    }
