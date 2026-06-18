@@ -638,17 +638,55 @@
         box-shadow: 
                 0 0 5px #c0c0c0, 
                 0 0 10px #c0c0c0, 
-                0 0 15px #c0c0c0;
+                0 0 15px rgb(255, 255, 119);
     }
 
     .in-div0:hover, .in-div4:hover, .in-div5:hover, .in-div6:hover {
         box-shadow: 
                 0 0 5px #c0c0c0, 
-                0 0 10px #c0c0c0, 
-                0 0 15px #c0c0c0;
+                0 0 10px #e1e2a4, 
+                0 0 15px rgb(255, 255, 0);
     }
 
     .in-div0 p, .in-div4 p, .in-div5 p, .in-div6 p {
+        line-height: 50px;
+        font-family: arial;
+        color: white;
+    }
+
+    .in-div7, .in-div8, .in-div9, .in-div10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    background-color: #505050;
+    margin-top: 110px;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    transition: 0.4s;
+    /* Your background-colors, padding, borders, animations go here */
+}
+
+    .in-div10 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .in-div10 {
+        box-shadow: 
+                0 0 5px #c0c0c0, 
+                0 0 10px #c0c0c0, 
+                0 0 15px #54d054;
+    }
+
+    .in-div7:hover, .in-div8:hover, .in-div9:hover, .in-div10:hover {
+        box-shadow: 
+                0 0 5px #54d054, 
+                0 0 10px #54d054, 
+                0 0 15px #54d054;
+    }
+
+    .in-div7 p, .in-div8 p, .in-div9 p, .in-div10 p {
         line-height: 50px;
         font-family: arial;
         color: white;
@@ -949,7 +987,43 @@
                 0 0 15px #00FFFF;
 }
 
-.body
+.discord11 {
+    padding: 10px;
+    width: 320px;
+    background-color: rgb(84, 208, 84);
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    transition: 0.4s;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.discord11:hover {
+        box-shadow: 
+                0 0 5px #54d054, 
+                0 0 10px #54d054, 
+                0 0 15px #54d054;
+}
+
+    .discord12 {
+    padding: 10px;
+    width: 320px;
+    background-color: rgb(239, 239, 76);
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    transition: 0.4s;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.discord12:hover {
+        box-shadow: 
+                0 0 5px #EFEF4C, 
+                0 0 10px #EFEF4C, 
+                0 0 15px #EFEF4C;
+}
 
  .cancel {
     padding: 10px;
